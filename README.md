@@ -1,66 +1,19 @@
-## Foundry
+# CrowdFund
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+CrowdFund is a decentralized crowdfunding contract that allows users to create campaigns, pledge tokens, and claim or refund contributions.
 
-Foundry consists of:
+## Features
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Create Campaign**: Initiate a new crowdfunding campaign with a title, description, goal, and duration.
+- **Pledge Tokens**: Contribute tokens to a campaign.
+- **Unpledge Tokens**: Withdraw tokens from a campaign.
+- **Claim Funds**: Claim collected funds if the campaign reaches its goal.
+- **Refund**: Receive a refund if the campaign does not reach its goal.
 
-## Documentation
+## Getting Started
 
-https://book.getfoundry.sh/
+### Prerequisites
 
-## Usage
+- [Foundry](https://book.getfoundry.sh/) (for development and testing)
+- [Anvil](https://book.getfoundry.sh/anvil/) (for local blockchain simulation)
 
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
